@@ -29,5 +29,5 @@ class LocationSerializer(serializers.HyperlinkedModelSerializer):
 
 class CardSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Location
+        model = Card
         fields = ('title', 'info', 'type', 'location', 'link', 'publish_date')
